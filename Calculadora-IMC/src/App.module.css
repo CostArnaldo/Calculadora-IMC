@@ -1,0 +1,160 @@
+* { box-sizing:border-box;}
+body {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-color: white;
+  color: black;
+  
+  
+}
+
+.headerContainer {
+  max-width:  1080px;
+  margin: 0 ;
+  
+}
+.container {
+    display: flex;
+    max-width: 1600px;
+    height: 80vh;
+    margin: auto;
+    gap: 120px;
+    
+}
+.container .leftSide {
+    flex: 1;
+
+}
+.container .leftSide input {
+  background-color: white;
+  color: black;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid rgba(150, 163, 171, .4);
+  padding: 10px 2px;
+  font-size: 25px;
+  outline: 0;
+  
+}
+.container .leftSide h1 {
+  margin:0;
+  padding-left: 10px ;
+  font-size: 80px;
+  color: #227c9d;
+  transition: all ease-in 2s;
+
+  }
+  .container .leftSide p {
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: grey;
+
+  }
+  .container .leftSide button {
+    background-color: rgb(0, 121, 197);
+    color: white;
+    font-size: 30px;
+    border: 0;
+    border-radius: 20px;
+    padding: 15px 0;
+    width: 100%;
+    cursor: pointer;
+    margin-top: 160px;
+    transition: all ease-out 2s ;
+
+  }
+  .container .leftSide button:hover {
+    opacity: .4;
+
+  }
+.container .rightSide {
+    flex: 1;
+    display:flex;
+    transition: all ease-out 2s;
+    
+}
+.container  .rightSide .grid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  
+}
+
+.container .rightSide .rightBig {
+  flex: 1;
+  display: flex;
+}
+
+.container .rightSide .rightArrow {
+  position: absolute;
+  background-color: #227C9D;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-top: 15px;
+  margin-left: -70px;
+  
+}
+
+
+@media (max-width: 500px) { 
+  
+  .container {
+    height: 80vh;
+    margin: auto;
+    gap: 80px;
+    
+}
+
+.container .leftSide input {
+  background-color: white;
+  color: black;
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid rgba(150, 163, 171, .4);
+  padding: 10px 2px;
+  font-size: 14px;
+  outline: 0;
+  
+}
+.container .leftSide h1 {
+  margin:0;
+  padding-left: 10px ;
+  font-size: 35px;
+  color: #227c9d;
+  transition: all ease-in 2s;
+
+  }
+  .container .leftSide p {
+    font-size: 15px;
+    margin-bottom: 40px;
+    color: grey;
+
+  }
+  .container .leftSide button {
+    background-color: rgb(0, 121, 197);
+    color: white;
+    font-size: 15px;
+    border: 0;
+    border-radius: 20px;
+    padding: 15px 0;
+    width: 100%;
+    cursor: pointer;
+    margin-top: 60px;
+    transition: all ease-out 2s ;
+
+  }
+ 
+  
+.container  .rightSide .grid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(1, 4fr);
+  gap: 10px;
+  
+}
+}
